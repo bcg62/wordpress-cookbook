@@ -111,3 +111,5 @@ default['wordpress']['salt']['auth'] = nil
 default['wordpress']['salt']['secure_auth'] = nil
 default['wordpress']['salt']['logged_in'] = nil
 default['wordpress']['salt']['nonce'] = nil
+
+default['wordpress']['webroot'] = node['wordpress']['dir']
