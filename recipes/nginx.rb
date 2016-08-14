@@ -32,6 +32,7 @@ php_fpm_pool "wordpress" do
   listen_group node['wordpress']['install']['group']
   php_options node['wordpress']['php_options']
   start_servers 5
+  php_options 'pm.status_path' => '/wordpress/status.php', 'ping.path' => '/wordpress/ping.php'
 end
 
 include_recipe "php::module_mysql"
