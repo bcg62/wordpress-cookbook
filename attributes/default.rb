@@ -67,6 +67,8 @@ default['wordpress']['server_port'] = '80'
 default['wordpress']['install']['user'] = node['apache']['user']
 default['wordpress']['install']['group'] = node['apache']['group']
 
+default['wordpress']['install']['app'] = true
+
 # Languages
 default['wordpress']['languages']['lang'] = ''
 default['wordpress']['languages']['version'] = ''
